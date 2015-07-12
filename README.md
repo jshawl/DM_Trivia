@@ -1,4 +1,4 @@
-# DM_Trivia-
+# DM_Trivia
 
 Purpose:  to provide education on Type 2 Diabetes
 Target Audience: Teenagers who are Type 2 Diabetic 

@@ -1,17 +1,19 @@
 $(document).ready(function(){
 
 
+  // please remove commented out code in the future
+  // and use git branches to store experimental code
   // var numberOfQuestions= 4;
   // var correctAnswer;
   // var currentQuestion;
   // var score= 0;
 
 
-  var questions= [{
+  var questions= [{ // Excellent choice in data structure!!
 
       question: "What is Type 2 Diabetes?",
       possibleAnswers: ["The pressure in your blood is too high", "There is too much fluid in your lungs", "The body produces too much insulin", "The body does not produce enough insulin"],
-      answer: "The body does not produce enough insulin"
+      answer: "The body does not produce enough insulin" // answer could also be an index to avoid repeating yourself
     },{
 
       question: "What happens when you experience hyperglycemia?",
@@ -87,9 +89,11 @@ $(document).ready(function(){
 
 
      //$("#questionOne").show()
-     var randomNumber = Math.floor(Math.random ()*12);
+     var randomNumber = Math.floor(Math.random ()*12); // or questions.length instead of 12
      $("#question").html(questions[randomNumber].question)
     $(".choice").eq(0).html(questions[randomNumber].possibleAnswers[0])
+    // it would be nice to see some pseudocode here to see what you tried
+    // regarding clicking on a correct or incorrect answer.
 })
 })
   //get user's input
